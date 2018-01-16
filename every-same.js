@@ -19,17 +19,30 @@ console.log("Verifying all valid users : ", verifyValid(
     [
       { id: 2 },
       { id: 1 }
-    ]));
+    ]) === true);
 
-    console.log("Verifying all invalid users : ", verifyValid(
-        [
-          { id: 1 },
-          { id: 2 },
-          { id: 3 }
-        ],
-        [
-          { id: 4 },
-          { id: 1 }
-        ]));
+console.log("Verifying all invalid users : ", verifyValid(
+    [
+      { id: 1 },
+      { id: 2 },
+      { id: 3 }
+    ],
+    [
+      { id: 4 },
+      { id: 1 }
+    ]) === false);
 
-// module.exports = checkUsersValid
+console.log("Verifying zero submitted users : ", verifyValid(
+    [ { id: 1 },
+      { id: 2 },
+      { id: 3 } ],
+    [ ]) === true);
+
+console.log("Verifying zero submitted users : ", verifyValid(
+    [ ],
+    [ { id: 1 },
+      { id: 2 },
+      { id: 3 } ]
+    ) === false);
+
+module.exports = checkUsersValid
