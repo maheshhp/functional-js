@@ -21,4 +21,15 @@ console.log("Verifying all valid users : ", verifyValid(
       { id: 1 }
     ]));
 
+    console.log("Verifying all invalid users : ", verifyValid(
+        [
+          { id: 1 },
+          { id: 2 },
+          { id: 3 }
+        ],
+        [
+          { id: 4 },
+          { id: 1 }
+        ]));
+
 // module.exports = checkUsersValid
