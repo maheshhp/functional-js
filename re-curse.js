@@ -8,14 +8,18 @@ function addValues(pre, next) {
 
 function reduce(arr, fn, initial) {
   // SOLUTION GOES HERE
-
+  if (arr.length === 0) {
+    return initial;
+  }
+  initial = addValues(initial, arr[0]);
+  return reduce(arr.slice(1), addValues, initial);
 }
 let inputWords = [1, 2, 3, 4];
 let noInputWords = [];
 
 //Testing reduce function
-// console.log("Return [] for zero objects : ", reduce(noInputWords, addValues, 0) === 0);
-// console.log("Return correct count values : ", reduce(inputWords, addValues, 0) === 10);
+console.log("Return [] for zero objects : ", reduce(noInputWords, addValues, 0) === 0);
+console.log("Return correct count values : ", reduce(inputWords, addValues, 0) === 10);
 
 //Testing addValues function
 console.log("Return 0 for 0 as input : ", addValues(0, 0) === 0);
