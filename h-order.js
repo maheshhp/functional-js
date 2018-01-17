@@ -1,16 +1,16 @@
 let counter = 0;
 function repeat(operation, num) {
-      // SOLUTION GOES HERE
-      for(let i=0; i<num; i++){
-	operation();
-      }
-    }
+  // SOLUTION GOES HERE
+  for(let i=0; i<num; i++){
+    operation();
+  }
+}
 
-    // Do not remove the line below
-module.exports = repeat
+// Do not remove the line below
+module.exports = repeat;
 
 //function testRepeat(fn, times){
-//   counter = 0; 
+//   counter = 0;
 //   repeat(fn, times);
 //   return counter;
 //}

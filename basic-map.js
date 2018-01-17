@@ -1,7 +1,7 @@
 function doubleAll(numbers) {
-   return numbers.map( a => a*2 );
+  return numbers.map( a => a*2 );
 }
-module.exports = doubleAll
+module.exports = doubleAll;
 
 // function verifyDouble(numbers, answers){
 //    if(numbers === null || answers === null)
