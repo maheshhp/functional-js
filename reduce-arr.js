@@ -14,8 +14,8 @@ function countWords(inputWords) {
   }, {});
 }
 
-let inputWords = ["Apple", "Banana", "Apple", "Durian", "Durian", "Durian"];
-let noInputWords = [];
-console.log("Return [] for zero objects : ", countWords(noInputWords).length === 0);
-console.log("Return correct count values : ", countWords(inputWords).Apple === 2 && countWords(inputWords).Durian === 3 && countWords(inputWords).Banana === 1);
+// let inputWords = ["Apple", "Banana", "Apple", "Durian", "Durian", "Durian"];
+// let noInputWords = [];
+// console.log("Return [] for zero objects : ", countWords(noInputWords).length === 0);
+// console.log("Return correct count values : ", countWords(inputWords).Apple === 2 && countWords(inputWords).Durian === 3 && countWords(inputWords).Banana === 1);
 module.exports = countWords;
