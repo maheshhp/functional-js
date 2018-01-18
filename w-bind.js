@@ -4,7 +4,7 @@ function logger(namespace) {
   // SOLUTION GOES HERE
   return function() {
     let slicedArgs = slice.call(arguments);
-    console.log.apply(null, [namespace].concat(slicedArgs));
+    console.log.apply(null,[namespace].concat(slicedArgs));
   };
 }
 
