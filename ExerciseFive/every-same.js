@@ -10,7 +10,7 @@ function verifyValid(goodUsers, validList) {
   return validInit(validList);
 }
 
-console.log("Verifying all valid users : ", verifyValid(
+console.log('Verifying all valid users : ', verifyValid(
   [
     { id: 1 },
     { id: 2 },
@@ -21,7 +21,7 @@ console.log("Verifying all valid users : ", verifyValid(
     { id: 1 }
   ]) === true);
 
-console.log("Verifying all invalid users : ", verifyValid(
+console.log('Verifying all invalid users : ', verifyValid(
   [
     { id: 1 },
     { id: 2 },
@@ -32,13 +32,13 @@ console.log("Verifying all invalid users : ", verifyValid(
     { id: 1 }
   ]) === false);
 
-console.log("Verifying zero submitted users : ", verifyValid(
+console.log('Verifying zero submitted users : ', verifyValid(
   [ { id: 1 },
     { id: 2 },
     { id: 3 } ],
   [ ]) === true);
 
-console.log("Verifying zero submitted users : ", verifyValid(
+console.log('Verifying zero submitted users : ', verifyValid(
   [ ],
   [ { id: 1 },
     { id: 2 },

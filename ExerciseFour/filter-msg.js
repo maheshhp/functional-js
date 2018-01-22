@@ -11,6 +11,6 @@ function verifyGetMsg(messages, num) {
   return false;
 }
 
-// console.log("Returning messages less than 50 characters : ", verifyGetMsg([{message: "jhadfgHJADFGJHAFGHJGFHJGFHJGFAJGJHGghgfjhgdfjhgdhgfjhgdfhjgdhgdhhfgfsghjsghjgfhjgfhjghdsfjdgfjhsgdfhjgfjhgdgfjhdsgfdsfgfjdgfjdgfj"}, {message: "abcdefg"}], 1));
+// console.log('Returning messages less than 50 characters : ', verifyGetMsg([{message: 'jhadfgHJADFGJHAFGHJGFHJGFHJGFAJGJHGghgfjhgdfjhgdhgfjhgdfhjgdhgdhhfgfsghjsghjgfhjgfhjghdsfjdgfjhsgdfhjgfjhgdgfjhdsgfdsfgfjdgfjdgfj'}, {message: 'abcdefg'}], 1));
 
 module.exports = getShortMessages;
